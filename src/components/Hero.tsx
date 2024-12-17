@@ -1,4 +1,5 @@
 import { Card } from "./ui/card";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -9,8 +10,30 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold">Daniel Adediran</h1>
             <p className="text-xl opacity-90">Bioinformatics Analyst & Researcher</p>
             <div className="flex gap-4">
-              <a href="mailto:adedirandanieladewoleo4@gmail.com" className="bg-secondary text-primary px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors">
-                Contact Me
+              <a 
+                href="mailto:adedirandanieladewoleo4@gmail.com" 
+                className="inline-flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                Email
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/daniel-adediran/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+              <a 
+                href="https://github.com/dexwel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-colors"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
               </a>
             </div>
           </div>
