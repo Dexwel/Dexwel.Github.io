@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "/daniels-digital-identity/", // Add this line for GitHub Pages
   plugins: [
     react(),
     mode === 'development' &&
