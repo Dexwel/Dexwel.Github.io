@@ -1,4 +1,5 @@
 import { Card } from "./ui/card";
+import { ExternalLink } from "lucide-react";
 
 const publications = [
   {
@@ -29,6 +30,14 @@ export const Publications = () => {
               <p className="text-secondary">DOI: {pub.doi}</p>
             </Card>
           ))}
+          <a 
+            href="https://scholar.google.com/citations?user=HbEmDf0AAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors"
+          >
+            View all publications on Google Scholar <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

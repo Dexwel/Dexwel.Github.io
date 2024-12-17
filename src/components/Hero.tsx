@@ -15,7 +15,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex justify-center md:justify-end">
-            <Card className="w-64 h-64 overflow-hidden">
+            <Card className="w-64 h-64 overflow-hidden rounded-full border-4 border-secondary">
               <img 
                 src="/lovable-uploads/fb991331-765f-4d44-9fa3-1e83bb1b8491.png"
                 alt="Daniel Adediran"
